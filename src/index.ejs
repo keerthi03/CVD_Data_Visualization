@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- link the main css file -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- link the main js file -->
+    <script type="module" src="js/app.js" defer></script>
+</head>
+<body>
+        <!-- ai2html- heading -->
+        <section class="ai2html">
+            <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                <!-- This is the line that matters for import -->
+                <%- include('./ai2html-output/Heading.ejs'); %>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <!-- ai2html- causes of death -->
+        <section class="ai2html" style="margin-top: 50px;">
+            <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                <!-- This is the line that matters for import -->
+                <%- include('./ai2html-output/causes-of-death.ejs'); %>
+                </div>
+            </div>
+            </div>
+        </section>    
+
+     <!-- region death scrolly -->
+     <section id="scrolly-one">
+
+        <!-- define the scroll sections -->
+        <% const scrolly1=
+            [
+            { 
+                "filename" : "1990" , 
+                "anno" : "_blank-slide_" 
+            }, 
+            { 
+                "filename" : "1990_2010" , 
+                "anno": "_blank-slide_"
+            }
+            ] 
+        %>
+        <!-- every { filename, anno } object makes a new section -->
+
+        <!-- include the component -->
+        <%- include('./scrolly/scrolly.ejs', {id: "scrolly-one" , blocks: scrolly1 }); %>
+        
+        </section>
+        
+
+        <!-- ai2html- causes of death in india -->
+        <section class="ai2html">
+            <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                <!-- This is the line that matters for import -->
+                <%- include('./ai2html-output/cause_of_death_india.ejs'); %>
+                </div>
+            </div>
+            </div>
+        </section> 
+        
+        <!-- ai2html- mortality rate in india over years -->
+        <section class="ai2html" style="margin-top: 50px;">
+            <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                <!-- This is the line that matters for import -->
+                <%- include('./ai2html-output/mortality_rate_india_years.ejs'); %>
+                </div>
+            </div>
+            </div>
+        </section> 
+
+
+        <!-- men women scrolly -->
+     <section id="scrolly-two">
+
+        <!-- define the scroll sections -->
+        <% const scrolly2=
+            [
+            { 
+                "filename" : "menwomen" , 
+                "anno" : "_blank-slide_" 
+            }, 
+            { 
+                "filename" : "risk" , 
+                "anno": "_blank-slide_"
+            }
+            ] 
+        %>
+        <!-- every { filename, anno } object makes a new section -->
+
+        <!-- include the component -->
+        <%- include('./scrolly/scrolly.ejs', {id: "scrolly-two" , blocks: scrolly2 }); %>
+        
+        </section>
+
+           <!-- prevention scrolly -->
+     <section id="scrolly-three">
+
+        <!-- define the scroll sections -->
+        <% const scrolly3=
+            [
+            { 
+                "filename" : "prevention1" , 
+                "anno" : "_blank-slide_" 
+            }, 
+            { 
+                "filename" : "prevention2" , 
+                "anno": "_blank-slide_"
+            }, 
+            { 
+                "filename" : "prevention3" , 
+                "anno": "_blank-slide_"
+            }
+            ] 
+        %>
+        <!-- every { filename, anno } object makes a new section -->
+
+        <!-- include the component -->
+        <%- include('./scrolly/scrolly.ejs', {id: "scrolly-three" , blocks: scrolly3 }); %>
+        
+        </section>
+
+         <!-- ai2html- footer -->
+         <section class="ai2html" style="margin-top: 50px;">
+            <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                <!-- This is the line that matters for import -->
+                <%- include('./ai2html-output/footer.ejs'); %>
+                </div>
+            </div>
+            </div>
+        </section> 
+</body>
+</html>
