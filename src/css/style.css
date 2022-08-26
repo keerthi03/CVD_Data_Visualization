@@ -4,18 +4,29 @@
 /* FONTS */
 @import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;800&display=swap');
 
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  background-color: #ffe5cf;
+}
+
+/*
 body {
   font-family: 'Source Sans Pro', sans-serif;
   background-color: #ffe5cf;
 }
+*/
 
 [class*="display-"] {
-  font-family: 'Source Serif Pro', serif;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
 }
 
 .para{
   max-width: 720px;
   margin:0 auto;
-  padding: 0px 10px;
+  padding: 0px 20px;
+  font-family: 'montserrat';
 }

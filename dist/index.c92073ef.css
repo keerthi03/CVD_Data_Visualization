@@ -1,5 +1,6 @@
 @import "https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@700&display=swap";
 @import "https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;600&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;800&display=swap";
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -11456,17 +11457,20 @@ textarea.form-control-lg {
 
 body {
   background-color: #ffe5cf;
-  font-family: Source Sans Pro, sans-serif;
+  font-family: Montserrat, sans-serif;
+  font-weight: 400;
 }
 
 [class*="display-"] {
-  font-family: Source Serif Pro, serif;
+  font-family: Montserrat, sans-serif;
+  font-weight: 400;
 }
 
 .para {
   max-width: 720px;
   margin: 0 auto;
-  padding: 0 10px;
+  padding: 0 20px;
+  font-family: montserrat;
 }
 
 /*# sourceMappingURL=index.c92073ef.css.map */
